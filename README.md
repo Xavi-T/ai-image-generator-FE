@@ -1,12 +1,71 @@
-# React + Vite
+# AI Image Generator - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 **AI Image Generator - Frontend** là ứng dụng React + Vite giúp tạo hình ảnh từ mô tả bằng AI.
 
-Currently, two official plugins are available:
+## 🛠 Công nghệ sử dụng
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Ant Design](https://ant.design/)
+- [Framer Motion](https://www.framer.com/motion/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ⚡ Cài đặt & Chạy dự án
 
-## Expanding the ESLint configuration
+### 1. Clone repository
+```sh
+git clone https://github.com/your-username/ai-image-generator-FE.git
+cd ai-image-generator-FE
+```
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 2. Cài đặt dependencies
+```sh
+yarn install  # hoặc npm install
+```
+
+### 3. Chạy project
+```sh
+yarn dev  # hoặc npm run dev
+```
+Sau đó, mở trình duyệt và truy cập: **http://localhost:5173/**
+
+## 📝 Cấu hình môi trường
+Tạo file `.env` trong thư mục gốc và thêm:
+```
+VITE_BACKEND_API_URL=http://localhost:5000
+```
+Thay đổi URL phù hợp với backend của bạn.
+
+## 🚀 Build production
+```sh
+yarn build  # hoặc npm run build
+```
+Output sẽ nằm trong thư mục `dist/`.
+
+## 📂 Cấu trúc thư mục
+```
+ai-image-generator-FE/
+├── src/
+│   ├── components/    # Các component tái sử dụng
+│   ├── pages/         # Các trang chính
+│   ├── assets/        # Hình ảnh & CSS
+│   ├── App.tsx        # Component chính
+│   ├── main.tsx       # Điểm vào chính
+├── public/            # Static files
+├── .env               # Cấu hình môi trường
+├── package.json       # Thông tin dự án
+├── vite.config.ts     # Cấu hình Vite
+└── README.md          # Tài liệu hướng dẫn
+```
+
+## 🤝 Đóng góp
+1. Fork dự án 🍴
+2. Tạo nhánh feature mới (`git checkout -b feature-name`)
+3. Commit thay đổi (`git commit -m 'Add new feature'`)
+4. Push lên branch (`git push origin feature-name`)
+5. Mở Pull Request 🚀
+
+## 📜 Giấy phép
+Dự án này sử dụng giấy phép **MIT**.
+
+---
+🎨 **AI Image Generator** - Tạo hình ảnh từ trí tuệ nhân tạo! 🚀
+
